@@ -334,6 +334,14 @@ async function loadProfile() {
     resultTag.className = `tag ${passedResult ? "pass" : "fail"}`;
     resultTag.textContent = `${passedResult ? "PASS" : "FAIL"} · ${formatDate(result.createdAt)}`;
 
+    
+
+    if (result.grade ===  null) {
+      resultTag.className = `tag ${"pending"}`
+      resultTag.textContent = `pending · ${formatDate(result.createdAt)}`
+    }
+
+
     listItem.appendChild(projectName);
     listItem.appendChild(resultTag);
     recentResultsList.appendChild(listItem);
