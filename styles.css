@@ -8,6 +8,7 @@
   --accent:#4ade80;
   --accent-2:#38bdf8;
   --danger:#f87171;
+  --warning: #f8e471;
   --radius:14px;
   --font:"Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif;
 }
@@ -68,6 +69,7 @@ h2{font-size:.95rem;color:var(--muted);text-transform:uppercase;letter-spacing:.
 .tag{font-size:.72rem;padding:2px 8px;border-radius:999px}
 .tag.pass{background:rgba(74,222,128,.15);color:var(--accent)}
 .tag.fail{background:rgba(248,113,113,.15);color:var(--danger)}
+.tag.pending{background:rgba(248, 246, 113, 0.15);color:var(--warning)}
 .gline{stroke:var(--line);stroke-width:1}
 .glabel{fill:var(--muted);font-size:10px}
 .bar{fill:var(--accent-2);transition:fill .15s}
